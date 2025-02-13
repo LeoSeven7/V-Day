@@ -85,6 +85,10 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("valentineName", trimmedName);
         gift.classList.remove("hidden");
         revealButton.style.display = "none";
+         // NEW: Smooth scroll to gift section
+    setTimeout(() => {
+        gift.scrollIntoView({ behavior: 'smooth' });
+    }, 300);
 
         // Confetti
         if (confettiCanvas.getContext) {
