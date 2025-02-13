@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts -->
+    <div class="floating-heart"></div>
+    <div class="floating-heart"></div>
+    <div class="floating-heart"></div>
+
+    <main class="container">
+        <div class="card">
+            <div class="input-container">
+                <label for="nameInput" class="sr-only">Enter your name</label>
+                <input type="text" id="nameInput" placeholder="Enter your name..." class="input-field">
+            </div>
+            <h1>Happy Valentine's Day!</h1>
+            <p>O ndandah hlogo gore ❤️</p>
+            <button id="revealButton">Open Your Gift</button>
+            
+            <!-- Gift Section -->
+            <div id="gift" class="hidden">
+                <img src="Images/Heart.png.jpg" alt="Sparkling heart" class="heart">
+                <p class="message" aria-live="polite">My Love,
+
+                    "I want to be known by you." Every little thought, every little dream,because you are the most beautiful part of my world. No matter what comes our way, "I'll be there for you in your darkest times," holding your hand through it all. If ever you feel lost, remember—"I will make you queen of everything you see." You are my heart, my safe place, my favorite person. I’m endlessly grateful for you, today and always.This may not seem like much,but I'll definately make it up to you. 💛</p>
+                <!-- 🚀 NEW: Message Generator Button -->
+                <button id="generateMessage" class="message-button">New Message 💌</button>
+            </div>
+        </div>
+        <p id="countdown" class="countdown" aria-live="polite"></p>
+    </main>
+
+    <canvas id="confettiCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
